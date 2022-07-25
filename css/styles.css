@@ -23,3 +23,28 @@ main{
     display: flex;
     justify-content: space-between;
 }
+main form {
+    width: 40%;
+}
+main article{
+    width: 45%;
+}
+h1,h2,h3,h4,p{
+    margin-bottom: 1em;
+}
+#title{
+    text-align: center;
+}
+input,textarea, destinaion_details button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 2px solid #666;
+    box-sizing: border-box;
+}
+.cards{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #efefef;
+}
