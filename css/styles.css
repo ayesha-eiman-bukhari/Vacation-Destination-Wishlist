@@ -42,8 +42,11 @@ input,textarea, destinaion_details,button{
     margin-bottom: 1em;
     border: 2px solid #666;
     box-sizing: border-box;
-    
+    border-radius: 15px;
+    resize: none
 }
+
+
 .cards{
     padding: 20px;
     margin-bottom: 20px;
