@@ -17,7 +17,7 @@
 
         const WishListCon = document.getElementById('destination_container');
         if (WishListCon.children.length == 0) {
-            document.getElementById('title').innerHTML = 'MY Wish List';
+            document.getElementById('title').innerHTML = 'My WishList';
         }
 
         document.querySelector('#destination_container').appendChild(destCard);
