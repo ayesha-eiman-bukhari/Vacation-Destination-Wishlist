@@ -32,7 +32,7 @@ pipeline {
                     sshPublisher(
                         publishers: [
                             sshPublisherDesc(
-                                configName: "Ayesha's_Terminal", 
+                                configName: "Ayesha_Terminal", 
                                 transfers: [sshTransfer(
                                     execCommand: """
                                         docker pull ayeshabukhari/vacation-destinations:${env.BUILD_ID}
@@ -54,7 +54,7 @@ pipeline {
                         sshPublisher(
                             publishers: [
                                 sshPublisherDesc(
-                                    configName: "Ayesha's_Terminal",
+                                    configName: "Ayesha_Terminal",
                                     transfers: [sshTransfer(
                                         execCommand: """
                                             docker pull ayeshabukhari/vacation-destination:${previousSuccessfulTag}
