@@ -38,7 +38,7 @@ pipeline {
                                         docker pull ayeshabukhari/vacation-destinations:${env.BUILD_ID}
                                         docker stop vacation-destinations-container || true
                                         docker rm vacation-destinations-container || true
-                                        docker run -d --name vacation-destinations-container -p 80:80 ayeshabukhari/vacation-destination:${env.BUILD_ID}
+                                        docker run -d --name vacation-destinations-container -p 80:80 ayeshabukhari/vacation-destinations:${env.BUILD_ID}
                                     """
                                 )]
                             )
