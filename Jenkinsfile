@@ -53,7 +53,7 @@ pipeline {
                         def previousSuccessfulTag = readFile('previous_successful_tag.txt').trim()
                         sshPublisher(
                             publishers: [
-                                sshPublisherDesc(
+                                SshPublisherDesc(
                                     configName: "Ayesha_Terminal",
                                     transfers: [sshTransfer(
                                         execCommand: """
