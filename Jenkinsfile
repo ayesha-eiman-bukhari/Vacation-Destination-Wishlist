@@ -5,7 +5,7 @@ pipeline {
       stage('Build') {
         steps {
           script {
-            dockerImage = docker.build("ayeshabukhari/vacation-destinations:${env.BUILD_ID}")
+            dockerImage = docker.build("aAyeshabukhari/vacation-destinations:${env.BUILD_ID}")
         }
     }
 }
@@ -53,7 +53,7 @@ pipeline {
                         def previousSuccessfulTag = readFile('previous_successful_tag.txt').trim()
                         sshPublisher(
                             publishers: [
-                                SshPublisherDesc(
+                                sshPublisherDesc(
                                     configName: "Ayesha_Terminal",
                                     transfers: [sshTransfer(
                                         execCommand: """
